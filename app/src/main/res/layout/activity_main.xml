@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yle.mylayouttest.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/MyToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?colorPrimary"
+        app:subtitle="Toolbars are amazing"
+        app:subtitleTextAppearance="@style/ToolbarTextAppearance.Subtitle"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Toolbar"
+        app:titleTextAppearance="@style/ToolbarTextAppearance.Title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|left"
+                android:text="Datapickerdialog" />
+
+            <TextView
+                android:id="@+id/notification"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|left"
+                android:text="Notification" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|left"
+                android:text="SearchView:" />
+
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:iconifiedByDefault="false"
+                android:queryHint="请输入搜索内容" />
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/singleChoice"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|left"
+                android:text="SingleChoiceItems" />
+
+            <TextView
+                android:id="@+id/multiChoice"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|left"
+                android:text="MultiChoiceItems" />
+
+            <TextView
+                android:id="@+id/toast"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|left"
+                android:text="Toast" />
+
+            <TextView
+                android:id="@+id/define_toast"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|left"
+                android:text="自定义Toast" />
+
+            <TextView
+                android:id="@+id/snackBar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|left"
+                android:text="SnackBar" />
+
+
+            <ProgressBar
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:max="100"
+                android:progress="20"
+                android:secondaryProgress="30"
+                android:theme="@style/LinnearProgress" />
+
+            <ProgressBar
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                style="@style/MyCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="?attr/colorPrimary"
+                app:tabGravity="fill"
+                app:tabMode="fixed" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <RatingBar
+                style="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="3"
+                android:stepSize="0.5" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout_u"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/MyErrortext">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/username"
+                    android:maxLines="1"
+                    android:theme="@style/MyEditText" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/MyErrortext">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:maxLines="1"
+                    android:theme="@style/MyEditText" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="submit"
+                android:text="@string/submit"
+                android:theme="@style/MyButtton" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Radio Button"
+                android:theme="@style/MyRadioButton" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MySwitch"
+                android:checked="true" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hint text"
+                android:theme="@style/MyEditText" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

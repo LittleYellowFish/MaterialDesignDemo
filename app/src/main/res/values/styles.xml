@@ -1,0 +1,105 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="textColorAlertDialogListItem">@android:color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:windowBackground">@drawable/background_dialog</item>
+    </style>
+
+    <style name="ToolbarTextAppearance">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:shadowColor">?colorAccent</item>
+    </style>
+
+    <style name="ToolbarTextAppearance.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ToolbarTextAppearance.Subtitle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MyToolbar">
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="android:navigationIcon">@mipmap/back</item>
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="SbackbarTheme" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="LinnearProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:progressBackgroundTint">@color/colorAccent</item>
+    </style>
+
+    <style name="MyCardViewStyle" parent="Theme.AppCompat.Light">
+        <item name="cardCornerRadius">2dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="contentPaddingBottom">24dp</item>
+        <item name="contentPaddingTop">24dp</item>
+        <item name="contentPaddingLeft">16dp</item>
+        <item name="contentPaddingRight">16dp</item>
+        <item name="cardBackgroundColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="RatingBar" parent="@style/Widget.AppCompat.RatingBar">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+    <style name="MyErrortext" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+    <style name="MyButtton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/pink</item>
+    </style>
+
+    <style name="MyRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="MySwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorAccent</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/pink</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/grey</item>
+    </style>
+
+</resources>

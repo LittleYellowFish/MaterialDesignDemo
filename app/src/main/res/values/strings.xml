@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyLayoutTest</string>
+    <string name="action_settings">settings</string>
+    <string name="action_favorite">favorite</string>
+    <string name="action_search">search</string>
+    <string name="singleChoice">singleChoice</string>
+    <string name="multiChoice">multiChoice</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="submit">Submit</string>
+</resources>
